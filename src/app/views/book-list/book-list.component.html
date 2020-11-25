@@ -1,0 +1,19 @@
+<div class="books row">
+
+  <div class="book col-12">
+      <input class="form-control" type="text" name="search" placeholder="Trouver votre Livre" [(ngModel)]="searchBook">
+  </div>
+    
+  <div *ngFor="let book of books  | search:searchBook " class="book col-xs-12 col-sm-6 col-md-4 col-lg-3" >   
+    <div>
+        <img class="book__cover" src="{{ book?.cover }}" />     
+        <div class="book__details">
+          <div class="book__title">{{ book?.title }}</div>
+          <div class="book__synopsis">{{ book?.synopsis[0] |  slice:0:130 }}...</div>
+          <div class="book__price"><span>Prix : </span> {{ book?.price }} €</div>
+          <button  class="book__title btn btn-primary-color" (click)="addToCart(book)"> Ajouter au panier</button>
+        </div>  
+    </div>        
+  </div>
+
+</div>

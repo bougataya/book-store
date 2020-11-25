@@ -1,0 +1,29 @@
+<div class="basket row">
+    <a class="basket__link" routerLink="/" >Retour</a>
+    <table  *ngIf="books.length != 0; else emptyBasket"class="details col-md-12">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Titre</th>
+                <th>Prix à l'unité</th>
+                <th>Quantité</th>
+                <th class="details__total primary">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books"  >
+                <td><img class="book__cover" src="{{ book?.cover }}" /> </td>
+                <td>{{ book?.title }}</td>
+                <td>{{ book?.price }}</td>
+                <td>{{ book?.count }}</td>
+                <td class="details__total primary">{{ book?.price | promo:0:book?.count }}</td>
+            </tr>
+            <tr class="details__total total">
+                <td colspan="3">Total à payer </td>
+                <td class="details__total total__toPay">{{ totalPrice | promo:bestOffer }}</td>
+                <td class="details__total total__oldPrice">{{ totalPrice }} €</td>
+            </tr>
+        </tbody>
+    </table>
+    <ng-template #emptyBasket>Votre panier est vide.</ng-template>
+</div>

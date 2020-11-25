@@ -1,0 +1,9 @@
+@import '/src/styles/variables';
+.navbar{
+    font-family: 'magic', sans-serif;
+    color: #F0F0F0;
+    font-size: 2.5em;
+    border-bottom: 1px solid $dark-yellow;
+    background-color: $dark-red;
+
+}

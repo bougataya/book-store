@@ -1,0 +1,9 @@
+<app-mini-basket *ngIf="displayMiniBasket"></app-mini-basket>
+<section>
+    <div class="bg-image"></div>
+    <div class="title" *ngIf="title" >{{ title}}</div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    
+</section>

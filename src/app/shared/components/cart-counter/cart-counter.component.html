@@ -1,0 +1,9 @@
+<div class="cart" (click)="displayMiniBasket()" >
+    <div *ngIf="countBook" class="cart__counter counter">
+        <span>
+            {{ countBook }}
+        </span>
+    </div>
+    <fa-icon class="cart__icon" [icon]="faCart"></fa-icon>
+</div>
+

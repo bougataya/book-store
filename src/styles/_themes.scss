@@ -1,0 +1,30 @@
+.counter{
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: -1rem;
+    position: absolute;
+    span{
+        vertical-align: -webkit-baseline-middle;
+    }
+}
+
+.btn-primary-color{
+    background-color: $dark-red !important;
+    color: white !important;
+    min-width: 180px;
+}
+
+.btn-secondary-color{
+    background-color: black !important;
+    color: white !important;
+    min-width: 180px;
+}
+
+.btn-third-color{
+    background-color: $dark-yellow !important;
+    color: white !important;
+    min-width: 180px;
+}

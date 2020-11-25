@@ -1,0 +1,18 @@
+<div class="mini-basket">
+    <div class="row">
+        <div class="col-sm-10 books">
+            <div class="book" *ngFor="let book of books">
+                <div class="book__counter counter">
+                    <span>
+                        {{ book?.count }}
+                    </span>
+                </div>
+                <img class="book__cover" src="{{ book?.cover }}" />   
+            </div>
+        </div>
+        <div class="col-sm-2 mini-basket__action">
+            <button class="btn btn-primary-color" (click)="clearBasket()">Vider le panier</button>
+            <button class="btn btn-third-color" (click)="redirectPanier()">Acceder au panier</button>
+        </div>
+    </div>
+</div>

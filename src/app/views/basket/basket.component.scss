@@ -1,0 +1,49 @@
+@import '/src/styles/variables';
+.basket{
+    margin-bottom: 2rem;
+    &__header{
+        display: block;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    &__link{
+        font-family: 'magic', sans-serif;
+        color: black;
+        font-size: 2rem;
+    }
+    .details{  
+        &__total{
+            font-weight: bold;       
+        }    
+        .total{
+            font-size: 1.2rem;
+            &__toPay{
+                color: green;
+            }
+            &__oldPrice{
+                color: red;
+                text-decoration: line-through;
+            }
+            td{
+                padding: 1rem;
+            }
+        }
+        .primary{
+            color: $dark-red;
+        }
+        margin-bottom: 1em;
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        th, td {
+            padding: 6px;
+            text-align: left;
+        }     
+        img{
+            height: 55px;
+            width: 37px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto
+        }             
+    }
+}

@@ -1,0 +1,30 @@
+.bg-image {
+    background: url('../../../assets/images/bg.jpg') no-repeat fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    height: 200%;
+    background-color: white;
+    padding: 2em;
+    -webkit-box-shadow: 0 0 10px rgba(196,196,196,0.5);
+    box-shadow: 0 0 10px rgba(196,196,196,0.5); 
+}
+.title{
+    font-family: 'magic', sans-serif;
+    color: #F0F0F0;
+    font-size: 3.5em;
+    margin-top: -500px;
+    text-align: center;
+}

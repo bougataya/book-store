@@ -1,0 +1,41 @@
+
+.books{
+    color: gray;
+    margin-bottom: 2rem;
+    &__header{
+        display: block;
+        font-weight: 800;
+        font-size: 2rem;
+    } 
+    .book{      
+        margin-bottom: 1em;
+         
+        &__title, &__price{
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            margin: 0.5rem 0;
+        } 
+        >div{
+            padding: 1em;
+            border: 1px solid #DCDCDC;
+            img{
+                height: 220px;
+                width: 150px;
+                border-radius: 4px;
+                opacity: 0.5;
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+            &:hover{
+                -webkit-box-shadow: 0 0 10px rgba(196,196,196,0.5);
+                box-shadow: 0 0 10px rgba(196,196,196,0.5);
+                cursor: pointer;
+                img{
+                    opacity: 1;
+                }
+            }
+        } 
+    }
+}
